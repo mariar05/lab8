@@ -32,6 +32,7 @@ let questions = [
         correctResponse: "Great!",
         incorrectResponse: "It's okay"
     }
+    
 ];
 
 let currentQuestionIndex = 0;

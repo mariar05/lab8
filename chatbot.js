@@ -10,17 +10,8 @@ let questions = [
         correctResponse: "Super!",
         incorrectResponse: "I am sorry"
     },
-    {
-        question: "Are you ready to explore new opportunities?",
-        options: {
-            a: "Yes",
-            b: "No"
-        },
-        correctAnswer: "a",
-        correctResponse: "Great mindset!",
-        incorrectResponse: "It's okay"
-    },
-    {
+    
+     {
         question: "Are you feeling motivated today?",
         options: {
             a: "Yes",
@@ -28,6 +19,17 @@ let questions = [
         },
         correctAnswer: "a",
         correctResponse: "Excellent!",
+        incorrectResponse: "It's okay"
+    },
+    
+    {
+        question: "Are you ready to explore new opportunities?",
+        options: {
+            a: "Yes",
+            b: "No"
+        },
+        correctAnswer: "a",
+        correctResponse: "Great!",
         incorrectResponse: "It's okay"
     }
 ];

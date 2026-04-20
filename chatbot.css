@@ -1,0 +1,33 @@
+body {
+    background:
+    radial-gradient(circle at 15% 10%, #d7defe 0%, transparent 38%),
+    radial-gradient(circle at 90% 75%, #d9cbf8 0%, transparent 35%),
+    #f7f8fc;
+  color: #2d3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.chat-container {
+    max-width: 600px;
+    width: 80%;
+    height: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+#chat-form {
+    display: flex;
+}

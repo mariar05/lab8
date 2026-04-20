@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Radut - Web Development Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Maria Radut</h1>
+    <p>Web design </p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="specificity.html">Specificity</a></li>
+      <li><a href="card.html">Card</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <section id="about">
+      <h2>About me</h2>
+      <p>My name is Maria Radut and I am a first-year student in the Computer Science program. My goal for this course is to build a solid foundation in web design.</p>
+    </section>
+
+    <section id="photo">
+      <h2>Photo</h2>
+      <img src="img/p1.jpeg" alt="Photo made by Maria Radut">
+    </section>
+
+    <section id="skills">
+      <h2>Personal skills</h2>
+      <table class="content-table skills-table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="3">Personal Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="3" class="skill-category">Programming</th>
+            <td>Python</td>
+            <td class="skill-good">JavaScript</td>
+          </tr>
+          <tr>
+            <td>C/C++</td>
+            <td class="skill-improve">Java</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="4" class="skill-category">Design</th>
+            <td colspan="2">Figma</td>
+          </tr>
+          <tr>
+            <td colspan="2">Adobe XD</td>
+          </tr>
+          <tr>
+            <td colspan="2">Photoshop</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="skill-plain">UI/UX</td>
+          </tr>
+          <tr>
+            <th scope="row" class="skill-category">Other</th>
+            <td colspan="2">Git</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>Personal projects portfolio</h2>
+      <table class="content-table project-table">
+        <caption>Portfolio projects with descriptions, technologies, estimated difficulty, and links</caption>
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Link</th>
+            <th scope="col">ETC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Personal Website</th>
+            <td>Single-page portfolio with semantic structure and responsive layout.</td>
+            <td>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </td>
+            <td>
+              <label for="difficulty-site" class="sr-only">Difficulty for Personal Website</label>
+              <select id="difficulty-site" name="difficulty-site">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </td>
+            <td><a href="https://github.com/CS-WD-UVT-2026" target="_blank" rel="noopener noreferrer">Repository</a></td>
+            <td>Deployed in 2026 semester 1</td>
+          </tr>
+          <tr>
+            <th scope="row">Task Tracker</th>
+            <td>Simple CRUD app for daily task planning with local persistence.</td>
+            <td>
+              <ul>
+                <li>JavaScript</li>
+                <li>Local Storage API</li>
+                <li>Bootstrap</li>
+              </ul>
+            </td>
+            <td>
+              <label for="difficulty-task" class="sr-only">Difficulty for Task Tracker</label>
+              <select id="difficulty-task" name="difficulty-task">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high" selected>High</option>
+              </select>
+            </td>
+            <td><a href="https://github.com/CS-WD-UVT-2026" target="_blank" rel="noopener noreferrer">Repository</a></td>
+            <td>Team project with 2 contributors</td>
+          </tr>
+          <tr>
+            <th scope="row">Book Notes App</th>
+            <td>Reading log app with filters by author and category.</td>
+            <td>
+              <ul>
+                <li>Vue</li>
+                <li>Firebase</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </td>
+            <td>
+              <label for="difficulty-book" class="sr-only">Difficulty for Book Notes App</label>
+              <select id="difficulty-book" name="difficulty-book">
+                <option value="low" selected>Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </td>
+            <td><a href="https://github.com/CS-WD-UVT-2026" target="_blank" rel="noopener noreferrer">Repository</a></td>
+            <td>Reading tracker with weekly progress reports</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Maria Radut · Web Design </p>
+  </footer>
+
+</body>
+</html>

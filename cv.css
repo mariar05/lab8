@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body.cv-page {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, #d7defe 0%, transparent 38%),
+    radial-gradient(circle at 90% 75%, #d9cbf8 0%, transparent 35%),
+    #f7f8fc;
+  color: #2d3748;
+}
+
+.cv-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.2rem 1.2rem;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  letter-spacing: 0.02em;
+}
+
+.cv-header p {
+  margin-top: 0.6rem;
+  max-width: 780px;
+  color: #4a5568;
+}
+
+.cv-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-areas:
+    "profile skills"
+    "projects projects"
+    "contact contact";
+  gap: 1.2rem;
+}
+
+.cv-block {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d8deef;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(45, 55, 72, 0.08);
+}
+
+.cv-block h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  color: #667eea;
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.profile-highlights {
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-list span {
+  border: 1px solid #b9c6f0;
+  border-radius: 999px;
+  padding: 0.32rem 0.75rem;
+  background-color: #eef2ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.9rem;
+}
+
+.project-card {
+  border: 1px solid #d8e1f5;
+  border-radius: 12px;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+  background-color: #ffffff;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+}
+
+.project-card p {
+  margin-top: 0;
+  color: #4a5568;
+  flex-grow: 1;
+}
+
+.project-card .card-footer {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.project-card .card-footer span {
+  font-size: 0.86rem;
+  color: #5a67d8;
+  font-weight: 700;
+}
+
+.project-card .card-footer a {
+  text-decoration: none;
+  background-color: #667eea;
+  color: #fff;
+  border-radius: 7px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.project-card .card-footer a:hover {
+  background-color: #764ba2;
+}
+
+.project-card.featured {
+  background: linear-gradient(145deg, #dce4ff 0%, #e9dcff 100%);
+  border-color: #b7c3f4;
+  transform: translateY(-2px);
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.6rem;
+}
+
+.contact-items p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "skills"
+      "projects"
+      "contact";
+  }
+}

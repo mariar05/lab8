@@ -18,17 +18,17 @@ let questions = [
         },
         correctAnswer: "a",
         correctResponse: "Great mindset!",
-        incorrectResponse: "No problem, start small and keep going"
+        incorrectResponse: "It's okay"
     },
     {
-        question: "Have you updated your resume recently?",
+        question: "Are you feeling motivated today?",
         options: {
             a: "Yes",
             b: "No"
         },
         correctAnswer: "a",
         correctResponse: "Excellent!",
-        incorrectResponse: "You should do it soon"
+        incorrectResponse: "It's okay"
     }
 ];
 

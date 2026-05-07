@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(74, 222, 128, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 26%),
+    #0f172a;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.intro {
+  margin: 10px 0 0;
+  max-width: 60ch;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0 14px;
+}
+
+.controls label {
+  font-weight: 700;
+}
+
+input {
+  min-width: min(100%, 320px);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.7rem;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+button {
+  padding: 0.62rem 1rem;
+  border: 0;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+  color: #06111f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.status {
+  opacity: 0.85;
+  margin: 0 0 12px;
+  min-height: 1.5em;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.78);
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  background: transparent;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #1e293b;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: rgba(30, 41, 59, 0.92);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tbody tr:hover {
+  background: rgba(30, 41, 59, 0.35);
+}
+
+td a {
+  color: #a7f3d0;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+  }
+
+  .controls {
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}
